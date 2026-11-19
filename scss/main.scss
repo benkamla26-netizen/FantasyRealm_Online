@@ -1,2 +1,36 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
+
+
+header {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, $primary, $secondary, $primary);
+        box-shadow: 0 0 10px rgba($secondary, 0.6);
+    }
+}
+
+[data-bs-theme=dark] {
+    --bs-link-color: #{$light};
+}
+footer {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, $primary, $secondary, $primary);
+        box-shadow: 0 0 10px rgba($secondary, 0.6);
+    }
+}

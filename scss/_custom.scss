@@ -4,8 +4,9 @@ $secondary: #9FF3E4;
 $dark: #14162E;
 $light: #F4FBFF;
 $muted: #68738C;
-$link: #68738C;
+$link: #F4FBFF;
 $font-family-sans-serif: "Montserrat", sans-serif !default;
 $font-family-serif:"Cardo", serif !default;
+$headings-font-family: $font-family-serif;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
