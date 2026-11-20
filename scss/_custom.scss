@@ -10,3 +10,17 @@ $font-family-serif:"Cardo", serif !default;
 $headings-font-family: $font-family-serif;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+.text-grey {
+    color:#68738C;
+    font-family: $font-family-sans-serif;
+    font-weight: 500;
+}
+
+.icon-size {
+    font-size: 3rem;
+}
+
+.card-title {
+    color: $primary;
+}
