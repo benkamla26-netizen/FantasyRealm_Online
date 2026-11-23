@@ -34,3 +34,37 @@ footer {
         box-shadow: 0 0 10px rgba($secondary, 0.6);
     }
 }
+
+.stars {
+    display: inline-flex;
+    flex-direction: row-reverse; // remet les étoiles dans le bon sens : 1 à gauche, 5 à droite
+    font-size: 2rem;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    label {
+        cursor: pointer;
+        color: $muted;
+    }
+
+    input:checked ~ label {
+        color: $warning;
+    }
+
+    &:hover label {
+        color: $muted;
+    }
+    label:hover,
+    label:hover ~ label {
+        color: $warning;
+    }
+
+    input:focus-visible + label {
+        outline: 2px solid $secondary;
+    }
+}

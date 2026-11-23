@@ -12012,6 +12012,19 @@ textarea.form-control-lg {
   color: #23305A;
 }
 
+.dropdown-menu-dark {
+  background-color: #23305A;
+}
+
+.dropdown-divider {
+  border-color: #9FF3E4;
+}
+
+.h3 {
+  color: #23305A;
+  font-family: "Cardo", serif;
+}
+
 header {
   position: relative;
 }
@@ -12042,4 +12055,33 @@ footer::after {
   height: 2px;
   background: linear-gradient(90deg, #23305A, #9FF3E4, #23305A);
   box-shadow: 0 0 10px rgba(159, 243, 228, 0.6);
+}
+
+.stars {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+}
+.stars input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.stars label {
+  cursor: pointer;
+  color: #68738C;
+}
+.stars input:checked ~ label {
+  color: #ffc107;
+}
+.stars:hover label {
+  color: #68738C;
+}
+.stars label:hover,
+.stars label:hover ~ label {
+  color: #ffc107;
+}
+.stars input:focus-visible + label {
+  outline: 2px solid #9FF3E4;
 }/*# sourceMappingURL=main.css.map */

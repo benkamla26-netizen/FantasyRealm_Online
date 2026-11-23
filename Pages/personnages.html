@@ -1,0 +1,224 @@
+
+<section>
+    <div class="container-fluid px-lg-5">
+        <div class="row py-5 text-center text-lg-start align-items-center">
+            <div class="d-flex flex-column gap-2 my-4 col-lg-6">
+                <h1 class="fw-bold text-primary">Personnages de la communauté</h1>
+                <p class="fs-6">Découvrez les personnages créés par la communauté.</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row g-3 justify-content-center">
+                    <div class="col-12 col-lg-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-lg w-100 dropdown-toggle" type="button" id="dropdownTrier" data-bs-toggle="dropdown" aria-expanded="false">Trier</button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownTrier">
+                                <li><a class="dropdown-item" href="#">Récents</a></li>
+                                <li><a class="dropdown-item" href="#">Populaire</a></li>
+                                <li><a class="dropdown-item" href="#">Mieux notés</a></li>
+                                <li><a class="dropdown-item" href="#">Les plus éclatés contre un bus</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="dropdown">
+                            <button class="btn btn-primary btn-lg w-100 dropdown-toggle" type="button" id="dropdownFiltrer" data-bs-toggle="dropdown" aria-expanded="false">Filtrer</button>
+                            <form class="dropdown-menu dropdown-menu-dark p-3 w-100" aria-labelledby="dropdownFiltrer">
+                                <fieldset>
+                                    <legend class="visually-hidden">Filtrer par genre</legend>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="filter-man" name="genre" value="man">
+                                        <label for="filter-man" class="form-check-label">Homme</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="filter-woman" name="genre" value="woman">
+                                        <label for="filter-woman" class="form-check-label">Femme</label>
+                                    </div>
+                                </fieldset>
+                                <hr class="dropdown-divider">
+                                <fieldset>
+                                    <legend class="visually-hidden">Filtrer par accessoires</legend>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="filter-without" name="accessoires" value="without">
+                                        <label for="filter-without" class="form-check-label">Modèle - sans accessoires</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" id="filter-with" name="accessoires" value="with">
+                                        <label for="filter-with" class="form-check-label">Utilisé - avec accessoires</label>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gap-5 my-5 align-items-center justify-content-center">
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 rounded-5">
+                    <img src="/images/coockiefurtif.webp" class="card-img-top" alt="Cookie Furtif">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <button type="button" class="btn btn-link stretched-link p-0 text-reset text-decoration-none fs-5" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-personnage"
+                                data-nom="Biscuit Furtif"
+                                data-createur="Nina"
+                                data-genre="Homme"
+                                data-image="/images/coockiefurtif.webp">
+                                Biscuit Furtif
+                            </button>
+                        </h5>
+                        <p class="card-text">par Nina</p>
+                        <span class="badge rounded-pill bg-primary">Homme</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 rounded-5">
+                    <img src="/images/gaucher.png" class="card-img-top" alt="Gaucher Habile">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <button type="button" class="btn btn-link stretched-link p-0 text-reset text-decoration-none fs-5" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-personnage"
+                                data-nom="Gaucher Habile"
+                                data-createur="Luc"
+                                data-genre="Homme"
+                                data-image="/images/gaucher.png">
+                                Gaucher Habile
+                            </button>
+                        </h5>
+                        <p class="card-text">Par Luc</p>
+                        <span class="badge rounded-pill bg-primary">Homme</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 rounded-5">
+                    <img src="/images/jotaro.png" class="card-img-top" alt="Joestar">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <button type="button" class="btn btn-link stretched-link p-0 text-reset text-decoration-none fs-5" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-personnage"
+                                data-nom="Joestar"
+                                data-createur="Jotaro"
+                                data-genre="Homme"
+                                data-image="/images/jotaro.png">
+                                Joestar
+                            </button>
+                        </h5>
+                        <p class="card-text">Par Jotaro</p>
+                        <span class="badge rounded-pill bg-primary">Homme</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 rounded-5">
+                    <img src="/images/lara.png" class="card-img-top" alt="Lara">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <button type="button" class="btn btn-link stretched-link p-0 text-reset text-decoration-none fs-5" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-personnage"
+                                data-nom="Lara"
+                                data-createur="Croft"
+                                data-genre="Femme"
+                                data-image="/images/lara.png">
+                                Lara
+                            </button>
+                        </h5>
+                        <p class="card-text">Par Croft</p>
+                        <span class="badge rounded-pill bg-primary">Femme</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 rounded-5">
+                    <img src="/images/banane.webp" class="card-img-top" alt="Banane Master">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <button type="button" class="btn btn-link stretched-link p-0 text-reset text-decoration-none fs-5" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-personnage"
+                                data-nom="Banane Master"
+                                data-createur="Gorille17"
+                                data-genre="Homme"
+                                data-image="/images/banane.webp">
+                                Banane Master
+                            </button>
+                        </h5>
+                        <p class="card-text">Gorille17</p>
+                        <span class="badge rounded-pill bg-primary">Homme</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 rounded-5">
+                    <img src="/images/bruno.png" class="card-img-top" alt="Bruno">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <button type="button" class="btn btn-link stretched-link p-0 text-reset text-decoration-none fs-5" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modal-personnage"
+                                data-nom="Bruno"
+                                data-createur="April"
+                                data-genre="Homme"
+                                data-image="/images/bruno.png">
+                                Bruno
+                            </button>
+                        </h5>
+                        <p class="card-text">April</p>
+                        <span class="badge rounded-pill bg-primary">Homme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Modal0-->
+
+<div class="modal fade" id="modal-personnage" tabindex="-1" aria-labelledby="modal-personnage-titre" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="modal-personnage-titre"></h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <img id="modal-personnage-image" class="img-fluid rounded-4 mb-3 col-12 col-lg-6" src="" alt="">
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+                        <form action="" id="avis-form">
+                            <fieldset class="mb-3">
+                                <legend class="h3 mt-3">Note</legend>
+                                <div class="stars">
+                                    <input class="required" type="radio" id="note-5" name="note" value="5"><label for="note-5" title="5 étoiles">★</label>
+                                    <input type="radio" id="note-4" name="note" value="4"><label for="note-4" title="4 étoiles">★</label>
+                                    <input type="radio" id="note-3" name="note" value="3"><label for="note-3" title="3 étoiles">★</label>
+                                    <input type="radio" id="note-2" name="note" value="2"><label for="note-2" title="2 étoiles">★</label>
+                                    <input type="radio" id="note-1" name="note" value="1"><label for="note-1" title="1 étoile">★</label>
+                                </div>
+                            </fieldset>
+                            <div>
+                                <label for="commentaire" class="form-label h3 mb-2">Commentaire</label>
+                                <textarea class="form-control mb-2" rows="4" name="commentaire" id="commentaire"></textarea>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary btn-sm ">Commenter</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p>Créé par <span id="modal-personnage-createur"></span></p>
+                        <span id="modal-personnage-genre" class="badge rounded-pill bg-primary"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="buton" class="btn btn-outline-primary">Copier</button>
+                <a href="#" class="btn btn-primary" onclick="route(event)">Créez votre personnage</a> 
+            </div>
+        </div>
+    </div>
+</div>
+
