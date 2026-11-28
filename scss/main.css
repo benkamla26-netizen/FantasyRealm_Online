@@ -12084,4 +12084,8 @@ footer::after {
 }
 .stars input:focus-visible + label {
   outline: 2px solid #9FF3E4;
+}
+
+#form-connexion {
+  height: 600px;
 }/*# sourceMappingURL=main.css.map */
